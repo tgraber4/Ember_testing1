@@ -13,7 +13,8 @@ From: python:3.10-slim
         "polars>=1.8.2" \
         "scikit-learn>=1.5.1" \
         "tqdm>=4.66.5" \
-        "signify>=0.7.1" \
+        "signify>=0.9.1,<0.10" \
+        "shap>=0.46.0" \
         "huggingface_hub>=0.32.4" \
         "matplotlib>=3.10.3"
 
@@ -22,7 +23,7 @@ From: python:3.10-slim
     export PYTHONNOUSERSITE=1
 
 %test
-    python -c "import lightgbm, pefile, polars, sklearn, tqdm, signify, huggingface_hub, matplotlib; print('ok')"
+    python -c "import lightgbm, pefile, polars, sklearn, tqdm, signify, huggingface_hub, matplotlib, shap; print('ok')"
 
 %help
     Python 3.10 with the thrember (EMBER2024) dependencies and libgomp1 for LightGBM.
