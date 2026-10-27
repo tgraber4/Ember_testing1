@@ -3,3 +3,5 @@ python310.sif
 ember.sif
 apptainer_cache/
 apptainer_tmp/
+__pycache__/
+
