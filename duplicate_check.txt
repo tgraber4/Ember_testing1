@@ -1,0 +1,54 @@
+
+=== 2023-09-24_2023-09-30_Win32_train.jsonl ===
+records: 60,000  unique sha256: 30,000
+copies per hash: {2: 30000}
+duplicated hashes: 30,000  (fully identical copies: 5,864)
+fields that differ between copies (number of hashes affected):
+  caps: 24,025
+  mbc: 22,639
+  ttps: 21,999
+caps per copy-set (empty vs filled): {('empty', 'filled'): 24025, ('empty', 'empty'): 111}
+
+=== 2023-09-24_2023-09-30_Win64_train.jsonl ===
+records: 20,000  unique sha256: 10,000
+copies per hash: {2: 10000}
+duplicated hashes: 10,000  (fully identical copies: 1,994)
+fields that differ between copies (number of hashes affected):
+  caps: 7,991
+  mbc: 7,400
+  ttps: 7,328
+caps per copy-set (empty vs filled): {('empty', 'filled'): 7991, ('empty', 'empty'): 15}
+
+=== 2023-09-24_2023-09-30_Dot_Net_train.jsonl ===
+records: 10,000  unique sha256: 5,000
+copies per hash: {2: 5000}
+duplicated hashes: 5,000  (fully identical copies: 118)
+fields that differ between copies (number of hashes affected):
+  caps: 4,882
+  mbc: 3,087
+  ttps: 2,929
+caps per copy-set (empty vs filled): {('empty', 'filled'): 4882}
+
+=== 2023-09-24_2023-09-30_APK_train.jsonl ===
+records: 8,000  unique sha256: 4,000
+copies per hash: {2: 4000}
+duplicated hashes: 4,000  (fully identical copies: 4,000)
+fields that differ between copies (number of hashes affected):
+caps per copy-set (empty vs filled): {}
+
+=== 2023-09-24_2023-09-30_ELF_train.jsonl ===
+records: 1,000  unique sha256: 500
+copies per hash: {2: 500}
+duplicated hashes: 500  (fully identical copies: 429)
+fields that differ between copies (number of hashes affected):
+  mbc: 71
+  caps: 69
+  ttps: 66
+caps per copy-set (empty vs filled): {('empty', 'filled'): 69, ('empty', 'empty'): 2}
+
+=== 2023-09-24_2023-09-30_PDF_train.jsonl ===
+records: 2,000  unique sha256: 1,000
+copies per hash: {2: 1000}
+duplicated hashes: 1,000  (fully identical copies: 1,000)
+fields that differ between copies (number of hashes affected):
+caps per copy-set (empty vs filled): {}
