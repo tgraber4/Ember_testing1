@@ -1,0 +1,96 @@
+
+=== 2023-09-24_2023-09-30_Win32_train.jsonl ===
+records: 60,000  unique sha256: 30,000
+all records, caps: {'empty': 35975, 'filled': 24025}
+all records, ttps: {'empty': 38001, 'filled': 21999}
+all records, mbc: {'empty': 37361, 'filled': 22639}
+pairs: 30,000  (hashes with other copy counts: 0)
+identical pairs, by (first/second) state:
+  caps=empty/empty ttps=empty/empty mbc=empty/empty: 5,864
+non-identical pairs, by (first/second) state:
+  caps=empty/filled ttps=empty/filled mbc=empty/filled: 12,463
+  caps=filled/empty ttps=filled/empty mbc=filled/empty: 9,237
+  caps=filled/empty ttps=empty/empty mbc=empty/empty: 747
+  caps=filled/empty ttps=empty/empty mbc=filled/empty: 495
+  caps=empty/filled ttps=empty/empty mbc=empty/empty: 451
+  caps=empty/filled ttps=empty/empty mbc=empty/filled: 333
+  caps=filled/empty ttps=filled/empty mbc=empty/empty: 178
+  caps=empty/filled ttps=empty/filled mbc=empty/empty: 121
+  caps=empty/empty ttps=empty/empty mbc=empty/filled: 81
+  caps=empty/empty ttps=empty/empty mbc=filled/empty: 30
+
+=== 2023-09-24_2023-09-30_Win64_train.jsonl ===
+records: 20,000  unique sha256: 10,000
+all records, caps: {'filled': 7991, 'empty': 12009}
+all records, ttps: {'empty': 12672, 'filled': 7328}
+all records, mbc: {'filled': 7400, 'empty': 12600}
+pairs: 10,000  (hashes with other copy counts: 0)
+identical pairs, by (first/second) state:
+  caps=empty/empty ttps=empty/empty mbc=empty/empty: 1,994
+non-identical pairs, by (first/second) state:
+  caps=empty/filled ttps=empty/filled mbc=empty/filled: 4,349
+  caps=filled/empty ttps=filled/empty mbc=filled/empty: 2,834
+  caps=filled/empty ttps=empty/empty mbc=empty/empty: 435
+  caps=filled/empty ttps=empty/empty mbc=filled/empty: 142
+  caps=filled/empty ttps=filled/empty mbc=empty/empty: 121
+  caps=empty/filled ttps=empty/empty mbc=empty/filled: 60
+  caps=empty/filled ttps=empty/empty mbc=empty/empty: 26
+  caps=empty/filled ttps=empty/filled mbc=empty/empty: 24
+  caps=empty/empty ttps=empty/empty mbc=filled/empty: 10
+  caps=empty/empty ttps=empty/empty mbc=empty/filled: 5
+
+=== 2023-09-24_2023-09-30_Dot_Net_train.jsonl ===
+records: 10,000  unique sha256: 5,000
+all records, caps: {'filled': 4882, 'empty': 5118}
+all records, ttps: {'empty': 7071, 'filled': 2929}
+all records, mbc: {'empty': 6913, 'filled': 3087}
+pairs: 5,000  (hashes with other copy counts: 0)
+identical pairs, by (first/second) state:
+  caps=empty/empty ttps=empty/empty mbc=empty/empty: 118
+non-identical pairs, by (first/second) state:
+  caps=empty/filled ttps=empty/filled mbc=empty/filled: 1,918
+  caps=filled/empty ttps=empty/empty mbc=empty/empty: 1,372
+  caps=filled/empty ttps=filled/empty mbc=filled/empty: 848
+  caps=empty/filled ttps=empty/empty mbc=empty/empty: 260
+  caps=empty/filled ttps=empty/empty mbc=empty/filled: 173
+  caps=filled/empty ttps=empty/empty mbc=filled/empty: 148
+  caps=filled/empty ttps=filled/empty mbc=empty/empty: 121
+  caps=empty/filled ttps=empty/filled mbc=empty/empty: 42
+
+=== 2023-09-24_2023-09-30_APK_train.jsonl ===
+records: 8,000  unique sha256: 4,000
+all records, caps: {'empty': 8000}
+all records, ttps: {'empty': 8000}
+all records, mbc: {'empty': 8000}
+pairs: 4,000  (hashes with other copy counts: 0)
+identical pairs, by (first/second) state:
+  caps=empty/empty ttps=empty/empty mbc=empty/empty: 4,000
+non-identical pairs, by (first/second) state:
+  (none)
+
+=== 2023-09-24_2023-09-30_ELF_train.jsonl ===
+records: 1,000  unique sha256: 500
+all records, caps: {'empty': 931, 'filled': 69}
+all records, ttps: {'empty': 934, 'filled': 66}
+all records, mbc: {'empty': 929, 'filled': 71}
+pairs: 500  (hashes with other copy counts: 0)
+identical pairs, by (first/second) state:
+  caps=empty/empty ttps=empty/empty mbc=empty/empty: 429
+non-identical pairs, by (first/second) state:
+  caps=empty/filled ttps=empty/filled mbc=empty/filled: 44
+  caps=filled/empty ttps=filled/empty mbc=filled/empty: 22
+  caps=empty/filled ttps=empty/empty mbc=empty/filled: 2
+  caps=filled/empty ttps=empty/empty mbc=filled/empty: 1
+  caps=empty/empty ttps=empty/empty mbc=filled/empty: 1
+  caps=empty/empty ttps=empty/empty mbc=empty/filled: 1
+
+=== 2023-09-24_2023-09-30_PDF_train.jsonl ===
+records: 2,000  unique sha256: 1,000
+all records, caps: {'empty': 2000}
+all records, ttps: {'empty': 2000}
+all records, mbc: {'empty': 2000}
+pairs: 1,000  (hashes with other copy counts: 0)
+identical pairs, by (first/second) state:
+  caps=empty/empty ttps=empty/empty mbc=empty/empty: 1,000
+non-identical pairs, by (first/second) state:
+  (none)
