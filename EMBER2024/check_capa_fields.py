@@ -11,6 +11,7 @@ order, separately for identical and non-identical pairs.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from collections import Counter, defaultdict
@@ -73,9 +74,12 @@ def check_file(path: Path) -> None:
                 if hash_key is None:
                     print(f"{path.name}: no hash field among {HASH_KEYS}; keys: {list(obj.keys())}")
                     return
-            for field in CAPA_FIELDS:
-                record_states[field][state(obj, field)] += 1
-            groups[obj[hash_key]].append(obj)
+            states = tuple(state(obj, field) for field in CAPA_FIELDS)
+            for field, s in zip(CAPA_FIELDS, states):
+                record_states[field][s] += 1
+            # keep only the states and a digest of the record, not the record itself
+            digest = hashlib.blake2b(json.dumps(obj, sort_keys=True).encode(), digest_size=16).digest()
+            groups[obj[hash_key]].append((states, digest))
 
     print(f"\n=== {path.name} ===")
     print(f"records: {total:,}  unique {hash_key}: {len(groups):,}")
@@ -87,10 +91,12 @@ def check_file(path: Path) -> None:
 
     identical = Counter()
     different = Counter()
-    for first, second in pairs:
+    for (first_states, first_digest), (second_states, second_digest) in pairs:
         # state of (first copy in file, second copy in file) for each capa field
-        combo = tuple(f"{field}={state(first, field)}/{state(second, field)}" for field in CAPA_FIELDS)
-        (identical if first == second else different)[" ".join(combo)] += 1
+        combo = " ".join(
+            f"{field}={a}/{b}" for field, a, b in zip(CAPA_FIELDS, first_states, second_states)
+        )
+        (identical if first_digest == second_digest else different)[combo] += 1
 
     print("identical pairs, by (first/second) state:")
     print(fmt(identical))
