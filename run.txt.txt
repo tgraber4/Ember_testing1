@@ -1,4 +1,4 @@
-apptainer exec --bind /cluster/pixstor/euh46-lab --env PYTHONPATH=/cluster/pixstor/euh46-lab/EmberEnsembleTylerTest/Ember_testing1/EMBER2024/src ember.sif python vectorize_dataset.py --data-dir   /cluster/pixstor/euh46-lab/EmberEnsemble/ember_data_full_no_capa --output-dir /cluster/pixstor/euh46-lab/EmberEnsemble/ember_data_vectorized_full_no_capa --workers 16
+apptainer exec --bind /cluster/pixstor/euh46-lab --env PYTHONPATH=/cluster/pixstor/euh46-lab/EmberEnsembleTylerTest/Ember_testing1/EMBER2024/src ember.sif python vectorize_dataset.py --data-dir   /cluster/pixstor/euh46-lab/EmberEnsemble/ember_data_full_no_capa --output-dir /cluster/pixstor/euh46-lab/EmberEnsemble/ember_data_vectorized_full_no_capa --workers 8
 
 workser = # of cpus
 

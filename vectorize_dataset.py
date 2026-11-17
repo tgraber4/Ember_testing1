@@ -77,8 +77,8 @@ def main():
                 print("Vectorizing training set")
                 model.vectorize_subset(args.output_dir / "X_train.dat", args.output_dir / "y_train.dat",
                                        train_paths, extractor, train_n, label_type, label_map)
-        # Test labels may have added classes, so the train y file must have the final width
-        # only if new labels appeared; thrember has the same behavior, so we keep it.
+        # Note: classes found only in the test set are added after train is vectorized (same as
+        # thrember), so y_test can have more columns than y_train. Use label_map.json to check.
     else:
         print("Vectorizing training set")
         model.vectorize_subset(args.output_dir / "X_train.dat", args.output_dir / "y_train.dat",
